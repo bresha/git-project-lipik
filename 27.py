@@ -88,3 +88,17 @@ newpath = os.path.join(cur_dir, 'new')
 if not os.path.exists(newpath):
     os.makedirs(newpath)
 
+for file in files:
+    data = []
+    for people in list_of_peoples:
+        data.append(people[file])
+
+    file_path = os.path.join(newpath, f"{file}.txt")
+    with open(file_path, 'w+', encoding="utf8") as f:
+        for value in data:
+            if file != "desc":
+                f.write(f"{value}\n")
+            else:
+                for el in value:
+                    f.write(f"{el}\n")
+
