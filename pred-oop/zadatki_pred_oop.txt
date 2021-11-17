@@ -1,0 +1,193 @@
+
+!!! RJESENJA SVIH ZADATAKA PUSHAJTE NA SVOJ REPOZITORIJ - NAJKASNIJE DO SUBOTE UJUTRO (20.11.) !!!
+
+1. Napiši program koji učitava listu i briše sve duplikate iz te liste te ispisuje novu listu s 
+obrisanim duplikatima.
+
+2. Napravi obrtaljku od unesenog stringa te na svakom drugom mjestu pridruzi nasumičan broj.
+
+3.  Napiši program koji upisuje bodove n plesnih natjecanja. Ispiši zbroj svih bodova tako da odbaciš 
+najbolji i najlošiji rezultat.
+
+4. Kreiraj listu brojeva i pretvori svaki element u listi u njegov kvadrat
+
+5. Kreiraj listu koja se sastoji od stringova i brojeva, te odvoji brojeve i stringove u zasebne liste
+
+6. S tipkovnice učitavajte cijele brojeve. Prvi upisani broj može biti bilo 
+koji cijeli broj. Učitavanje ponavljati dok god je upisani broj strogo 
+veći od prethodno upisanog broja. Ispisati sumu svih učitanih brojeva 
+osim broja zbog kojeg je prekinuto učitavanje.
+
+7. Učitajte s tipkovnice 2 niza znakova, svaki od tih nizova znakova 
+spremite u zasebnu varijablu. Ispišite indekse na kojima se pojavljuju 
+ista slova neovisno o veličini ('a' i 'A' tretirati jednako).
+
+
+8. Napišite program koji s tipkovnice učitava proizvoljni cijeli 
+troznamenkasti broj. Ako učitani broj nije troznamenkasti, ispišite 
+poruku o greški i prekinite daljnje izvođenje programa. U slučaju da 
+je učitani broj ispravan, ispišite prvi sljedeći troznamenkasti 
+palindrom. Na primjer, ako je učitani broj 120, prvi sljedeći palindrom 
+je 121.
+
+9. Napišite program koji učitava cijele brojeve sve dok je unesena 
+vrijednost veća od 0. Pronađite koji od učitanih brojeva ima najmanju 
+sumu znamenki te ispišite taj broj i sumu.
+
+10. S tipkovnice učitajte proizvoljni niz znakova. Kreirajte novi niz 
+znakova koji će sadržavati naizmjence velika i mala slova iz ulaznog 
+niza, redom kako se pojavljuju u ulaznom nizu: prvo veliko slovo u 
+ulaznom nizu, prvo sljedeće malo slovo u nastavku ulaznog niza, 
+prvo sljedeće veliko slovo u nastavku ulaznog niza itd. Novokreirani 
+niz ispišite na zaslon. U nastavku se nalazi primjer:
+
+Ulazni niz: ifeFemFEkej83FkW
+Izlazni niz: FeFkFkW
+
+
+11. Napišite program koji s tipkovnice učitava cijeli broj n iz intervala [3, 
+20]. U slučaju da je unesena vrijednost neispravna, ispisati prikladnu 
+poruku na ekran te zatražiti ponovni unos cijelog broja. Nakon 
+učitane vrijednosti n, učitajte n parova cijelih brojeva. Nakon što je n
+parova brojeva učitano, ispišite parove brojeva koji imaju najveću 
+sumu.
+
+12. Napišite program koji s tipkovnice učitava proizvoljni niz znakova. 
+Nad učitanim nizom znakova napravite analizu je li taj niz palindrom 
+ili nije. Niz je palindrom ako se isto čita slijeva nadesno ili pak 
+zdesna nalijevo.
+
+13. Napišite program koji će inicijalizirati varijablu n na proizvoljnu 
+cjelobrojnu vrijednost. Vrijednost varijable n neka predstavlja red 
+tablice. Ispisati tablicu veličine n redaka i n stupaca. Vrijednost 1 
+neka se nalazi na glavnoj dijagonali, a vrijednost 0 na svim ostalim 
+mjestima. U nastavku slijedi primjer za n=5:
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0
+0 0 0 0 1
+
+Napomena: za ispis vrijednost, tako da se nakon ispisa vrijednosti 
+dane print() funkciji ne ispiše novi redak koristiti sljedeću 
+sintaksu: print(vrijednost, end='')
+
+14. Odaberite proizvoljno koordinatu T=(x,y), vrijednosti varijabli x
+(stupac) i y (redak) neka budu manje od 10. Program neka ispiše 
+polje 10x10 čiji su svi elementi vrijednosti "-" osim koordinate T čija 
+je vrijednost "X". 
+
+Primjer: T=(1,1)
+- - - - - - - - - -
+- X - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+
+15. Napišite program koji ispisuje koliko ima prostih brojeva između 
+dva proizvoljna broja (prost broj je broj koji je djeljiv samo sa 1 i sa samim sobom).
+
+16. Napišite program koji sadrži varijablu u kojoj je upisan proizvoljni 
+niz znakova i brojčanu varijablu n. Provjerite je li vrijednost varijable 
+n manja od broja znakova u nizu. Ako je vrijednost varijable n veća 
+ispišite informaciju o grešci. Ispišite iz niza znakova svako n-to 
+slovo. Na primjer, ulazni niz je "ABCDEFGH", n je 2, tada je izlaz 
+"ACEG".
+
+17. Napišite program koji sadrži varijablu u kojoj je upisan proizvoljni niz 
+znakova. Ispišite koliko velikih slova se nalazi u nizu. Ako je neko od 
+unesenih slova u nizu "A", brojanje velikih slova je potrebno prekinuti 
+i ispisati informaciju da je veliko slovo "A" pronađeno.
+
+18. Ispišite sve parne brojeve između 1 i 1000 koju su istovremeno 
+djeljivi i s 5 i s 13.
+
+19. Napisi program koji unosi n brojeva i od znamenke desetice svakog broja stvara novi broj.
+
+20. Napisi program koji unosi n brojeva i sastavlja novi broj od najvece znamenke u svakom od
+brojeva
+
+21. Ispišite sljedeće primjere koristeći funkcije i petlju. funkcija mora primati varijabilan broj redaka koji ispisuje (npr. pod a), unesen broj je 7, jer ima 7 redaka. pod b) je unesen broj 5, jer ima 5 redaka)
+
+a)
+
+*
+**
+***
+****
+***
+**
+*
+
+b)
+
+  *  
+ *** 
+*****
+ *** 
+  * 
+c)
+1010101
+ 10101 
+  101  
+   1  
+d) 
+x x x x
+x x x
+x x
+x
+x x
+x x x
+x x x x
+
+22. Napišite program za koji traži najveći zajednički djelitelj dvaju brojeva
+
+23. koristenjem funkcija i naucenog, napisi program koji racuna iznos racuna u ovisnosti o transakcijama. dnevnik transakcija prikazi ovako (D: 100, W: 200), dok ukupan iznos na racunu prikazuje sa (T: 1000). ako korisnik unese T = 1000 te povuce iznos od 350 (W: 350), aplikacija treba ispisati azurirano stanje T: 650. ako nakon toga korisnik uplati iznos na racun, npr. 200 (D: 200), program treba uvecati iznos racuna i azurirati ga (T: 850). unosom stringa "quit", program prekida se izvodjenje programa.
+
+24. zadan je rjecnik:
+automobil = {
+    'kilometri' : 230000,
+    'oprema' : ['zimske gume', 'zracni jastuk', 'protuprovalni bacac plamena'],
+
+}
+    a) kilometre preuredite tako da dodatno broji i kilometre do servisa. postavite vrijednost na 300.
+    b) iz opreme, promijenite "zimske gume" u "ljetne gume" te "zracni jastuk" u "zracni balon"
+    c) dodajte polje za unos specifikacije koja sadrzi godinu proizvodnje (1976.), potrosnju (15 litara) i max. brzinu (178 km/h)
+    d) dodajte cijenu i postavite je na 45000
+    e) dodajte osiguranje (npr. croatia) te postavite vrijednost na True
+    f) kada se pozove funkcija 'servis', znaci da se automobil servisirao i promijenile su se sljedece vrijednosti:
+        - kilometri do servisa su se postavili na 2000
+        - zracni balon postao je 'novi zracni jastuk'
+        - ljetne gume promijenjene su na 'cjelogodisnje gume'
+        - cijenu uvecajte za 2000
+    
+25. napisite funkciju koja prima string oblika "<predmet>, <cijena>, <kolicina>" (npr. "kruh, 7.5, 5"), koji bi simulirao policu neke trgovine. program treba razdvojiti navedeni string te zasebne elemente spremiti u rjecnik. rjecnik se treba spremiti u listu proizvoda. simuliraj kupovinu: kada kupac kupi proizvod (ili broj proizvoda), njegova kolicina se treba umanjiti za iznos. ukoliko je kolicina 0, predmet se treba ukloniti sa police.
+
+26. vas omiljeni carobni aparat za kavu je podivljao. aparat treba ispitivati korisnika za kavu sve dok on ne unese "Q" ili 0. aparat prihvaca samo kovanice od 2kn ili 5kn. kada korisnik ubaci kovanicu od 5kn, aparat nausmicno izbacuje dvije kave. kada korisnik ubaci kovanicu od 2kn, aparat nasumicno izbaci jednu kavu. ako aparat sakupi 20kn, on se magicno napuni za 3 (nasumicne) kave. neka set sljedeceg oblika simbolizira pocetnu kolicinu kave u aparatu: dict_kava = {"turska": 4, "latte": 3, "espresso": 7, "makiyato": 5}. 
+
+27. nadogradite prethodni zadatak na nacin da ubacite u aparat i opciju za dodavanje mlijeka, secera ili meda u kavu. kada korisnik ubaci kovanicu, aparat ga treba pitati zeli li kavu sa dodatkom ili ne. postavite vrijednost svakog dodatka na 5, koristeci fromkeys. ukoliko korisnik zatrazi kavu sa sladilom kojega vise nema u aparatu, treba ispisati odgovarajucu poruku te ponuditi korisniku opciju bez dodatka ili povrat novca, nakon cega zavrsava sa izvodjenjem. u svim slucajevima treba se ispisati kakva je kava isporucena, sa kojim sladilom, koliko novca je ubaceno te koliki je iznos novca u aparatu nakon isporuke kave.
+
+28. Neka program omoguci unos do trenutka kad je unesen broj -1. Korisnik unosi stringove, a program vraca slucajne recenice iz zbirke mogucih odgovora.
+
+29. napravite program koji ce simulirati izvlacenje karti iz spila. program mora imati sljedece:
+    - spil od 20 karti
+    - 4 razlicite boje
+    - 5 brojeva za svaku boju
+    program treba imati mogucnost povlacenja 3 karte, povlacenja 1 karte, mijesanja spila, zbrajanja bodova (brojevi na kartama).
+    kreirajte izbornik sa mogucnoscu izbora opcije (zapocni igru, zavrsi igru) -> ako korisnik odabere "zapocni igru", spil se mijesa te se povlace 3 karte. igraca se zatim pita hoce li povuci dodatnu kartu ili ne. ako odabere novu kartu, ona se dodaje u ruku; u suprotnom se broj bodova usporedjuje sa protivnikom. koristeci random varijablu (12-20), kreirajte protivnika, gdje random varijabla predstavlja njegov broj bodova. program treba racunati trenutni broj bodova te ako on prelazi 20, ispisati "izgubio si" i pitati korisnika zeli li ponovno igrati ili ne. ukoliko igrac pobijedi, treba ispisati poruku: pobijedio si i postaviti pitanje za novom igrom.
+    
+70. kreirajte password generator, koji mora sadrzavati sljedece funkcionalnosti:
+    a) prilikom generiranja treba prikupiti sljedece podatke od korisnika:
+        - koliko lozinki zeli napraviti
+        - da li da koristi slova, brojeve, simbole
+        - duljinu lozinke
+        - kapitalizaciju
+    b) nadogradite program tako da korisnik upise rijec (hint). od hint se treba ubaciti u nasumicnom redosljedu i kapitalizaciji u lozinku koja se generira
+    
+71. napravite tipicnog "chat bota" neke drzavne firme. bot treba primati input korisnika te ako se odredjena rijec u stringu poklapa sa nekim od njemu predefiniranih stringova ili rijeci, ispisati odgovarajucu poruku. npr. ako je korisnik unio "pozdrav, ja sam Alen i radim za mirovinsko osiguranje". bot treba kao prvi string ispisati: "pozdrav, ja sam bot i napravljen pomocu AI", zatim (zbog rijeci mirovinsko), ispisati: " hrvatski zavod za mirovinsko osiguranje je trenutno na pauzi". unesite po zelji 20ak razlicitih stringova te simulirajte neki razgovor/temu po zelji.
+
