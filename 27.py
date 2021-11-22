@@ -49,9 +49,8 @@ def check_for_tel(line):
         return True
     return False
  
-def read_files():
-    cur_dir = os.getcwd()
-    files_dir = 'horoskop'
+def read_files(files_dir):
+    cur_dir = os.path.dirname(os.path.abspath(__file__))
     files_dir = os.path.join(cur_dir, files_dir)
     files_list = os.listdir(files_dir)
 
@@ -84,11 +83,11 @@ def read_files():
 
     return list_of_peoples
 
-def write_files(list_of_peoples):
+def write_files(list_of_peoples, save_dir):
     files = list_of_peoples[0].keys()
 
     cur_dir = os.getcwd()
-    newpath = os.path.join(cur_dir, 'new')
+    newpath = os.path.join(cur_dir, save_dir)
     if not os.path.exists(newpath):
         os.makedirs(newpath)
 
@@ -102,26 +101,29 @@ def write_files(list_of_peoples):
             for value in data:
                 f.write(f"{value}\n")
 
-def write_csv(list_of_peoples):
+def write_csv(list_of_peoples, save_dir, csv_filename):
     cols = list_of_peoples[0].keys()
 
     cur_dir = os.getcwd()
-    newpath = os.path.join(cur_dir, 'new')
+    newpath = os.path.join(cur_dir, save_dir)
     if not os.path.exists(newpath):
         os.makedirs(newpath)
 
-    file_path = os.path.join(newpath, "Tinder.csv")
+    file_path = os.path.join(newpath, csv_filename)
     with open(file_path, 'w+', newline='', encoding="utf8") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=cols)
         writer.writeheader()
         for people in list_of_peoples:
-            writer.writerow(people)
-            print(people)        
+            writer.writerow(people)      
 
 def main():
-    list_of_peoples = read_files()
-    write_files(list_of_peoples)
-    write_csv(list_of_peoples)
+    files_dir = 'horoskop'
+    save_dir = 'new'
+    csv_filename = "Tinder.csv"
+
+    list_of_peoples = read_files(files_dir)
+    write_files(list_of_peoples, save_dir)
+    write_csv(list_of_peoples, save_dir, csv_filename)
 
 if __name__ == "__main__":
     main()
