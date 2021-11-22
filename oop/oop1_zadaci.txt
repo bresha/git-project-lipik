@@ -1,0 +1,25 @@
+
+1. napravite klasu Zivotinja. unutar klase definirajte konstruktor koji sadrzi atribute za naziv, tip, masu, vrstu ishrane. definirajte i metodu unutar klase koja ce ispisati navedene atribute. u glavnom potprogramu kreirajte dva razlicita objekta te pozovite kreiranu metodu.
+
+2. napravite klasu za Obrada_stringa. klasa treba imati mogucnosti da iz nekog stringa napravi sljedece (u obliku metoda):
+    a) svaku rijec spremi u listu
+    b) ispisuje broj velikih i malih slova, brojeva, znakova
+    c) pretvorbu cijelih brojeva u rimske ekvivalente
+    d) unazadno ispisuje rijec po rijec (npr ako je uneseno "ja sam" treba ispisati "aj mas")
+    e) preoblicavanje slova, koja sadrzi sljedece funkcionalnosti: kapitalizacija svakog slova, uppercase cijelog stringa, spajanje stringa u jednu rijec i mijesanje slova
+    f) filtriranje brojeva ili slova, ovisno o trazenom
+napravite objekte, pozovite i testirajte program.
+
+3. napravite klasu Geometrijski_lik. klasa treba imati mogucnost proracuna oplosja i obujma kugle, valjka i kvadra te ispis navedenih oplosja te koristenih formula za proracun. ispisite na ekran sve navedeno.
+
+4. kreirajte klasu Vozilo, koja sadrzi sljedece atribute: marka, model, masa, kilometraza, max brzina, boja, cijena. napravite 2 objekta sa razlicitim atributima. nakon postavljanja, izmijenite boju u crvenu, kilometrazu postavite na 10000, max brzinu spustite za 15 i cijenu spustite za 10%. usporedite aute te ispisite koji od njih ima vecu max brzinu, kilometrazu i manju cijenu. 
+
+5. napravite klasu Banka. definirajte atribute korisnika u obliku rjecnika (oib, ime, prezime, stanje racuna, mjesecni prihod, ima li osiguranje). napravite metodu za podizanje kredita. metoda mora provjeriti da li je stanje racuna pozitivno, jesu li mjesecni prihodi visi od 5% od ukupne trazene svote kredite. ukoliko jesu, metoda vraca True. napravite metodu koja bi izracunala koliko bi mjeseci (i godina) bilo potrebno da korisnik vrati novac. nadogradite program tako da racuna i kamate na godisnjoj razini te ispisite rezultat.
+
+6. napravite klasu po zelji. neka jedna metoda prima args, a druga kwargs. u glavnom potprogramu predajte odgovarajuce vrijednosti te ih ispisite.
+
+7. nadogradite program iz prethodnog zadatka tako da napravi i konverziju args-a u liste i setove. napravite metodu koja ce vrsiti trazene operacije sa setovima. neka korisnik preko inputa odluci koju operaciju zeli izvrsiti.
+
+8. izaberite 5 ili vise (vama najzanimljivijih) ili najtezih zadataka iz vjezbe od srijede sto ste rijesili te ih smjestite u klase i definirajte prikladne metode i atribute.
+
+9. napravite klasu za usitnjavanje ili razmjenu novca. unutar klase osmislite sustav koji bi sadrzavao listu cijelih brojeva (novcanice unutar kase). metoda unutar klase bi primala neki broj. program treba vratiti sumu elemenata liste, koji bi tvorili uneseni broj, odnosno da li je uopce moguce izvratiti tocan iznos, s obzirom na novac u kasi (listi). npr ako je lista [10, 20, 50, 100, 200], a korisnik unese 180kn, program treba izbaciti iz liste 10, 20, 50, 100 te vratiti da je to moguce napraviti.
