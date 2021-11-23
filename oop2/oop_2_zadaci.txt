@@ -1,0 +1,10 @@
+
+1. napravite klasu Prva i Druga. neka obje imaju po 2 atributa i po jednu metodu za ispis proizvoljnog teksta. izvedite drugu klasu iz prve te ispisite sva 4 atributa koristeci izvedenu klasu.
+
+2. iz prethodne vjezbe iskoristite klasu zivotinja: iz nje izvedite 3 klase (mesojedi, biljojedi, svejedi). iz svake od navedenih klasa izvedite po jednu klasu sa nazivom zivotinje (npr slon, sova, riba). osmislite atribute i metode tako da budu smisleni i neka nesto ispisuju - npr. iz klase mesojed, neka ispise: "hranim se mesom!".
+
+3. Definirajte klasu Vozilo i dvije podklase Auto i Kamion. Sve klase imaju metodu dobaviVrstu koja ispisuje "Auto" za klasu Auto i "Kamion" za klasu Kamion.
+
+4. klasu Geometrijski_lik iz prethodne vjezbe preuredite tako da se iz nje izvode klase za kuglu i valjak. definirajte prikladne metode i atribute za pojedinu klasu. neka u nadklasi (super klasi) bude definiran samo onaj atribut koji se ponavlja u podklasama
+
+
