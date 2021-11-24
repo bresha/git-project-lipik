@@ -1,0 +1,19 @@
+1. Napravi novu datoteku, te upiši u nju neki sadržaj.
+
+2. Ponudi korisniku unos dok ne unese '!#quit$', svaku liniju zapisuj u datoteku.
+
+3. Ispiši sadržaj datoteke iz zadatka 2.
+
+4. Omogući unos, dok se ne unese '!#quit$'. Pitajte korisnika želi li unjeti knjigu.
+Omogući popisivanje knjiga u skladištu.
+Svaka knjiga ima naslov, autora, godinu izdanja, te cijenu. Nakon unosa svake knjige, upitajte korisnika
+želi li unjeti još jednu knjigu. Svaku knjigu zapisati u datoteku.
+
+5. Nadograditi 4 na način da pri pokretanju programa se korisniku nudi izbor:
+    1 - dodavanje knjiga
+    2 - izlistavanje knjiga
+    3 - izlaz iz programa
+
+6. Nadograditi 5 na način da prije izbornika pita korisnika za žanr knjiga koji želi obrađivati.
+Svaki žanr je pohranjen u svojoj datoteci. Kad korisnik unese žanr, ostatak programa se pokreće
+i vrši se obrada nad tom datotekom.
