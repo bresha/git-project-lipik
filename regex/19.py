@@ -6,3 +6,8 @@ import re
 
 url = 'http://web091-0m09home'
 
+pattern = re.compile(r'\D')
+
+numbers = pattern.sub('', url)
+
+print(numbers)
