@@ -24,7 +24,7 @@ print(pyramid(2))
 print(pyramid(3)) 
 print(pyramid(4))
 
-def pyramid2(num):
+def pyramid_comp(num):
     return [[1 for _ in range(i+1)] for i in range(num)]
 
-print(pyramid2(4))
+print(pyramid_comp(4))

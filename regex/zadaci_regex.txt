@@ -1,0 +1,43 @@
+1. Napiši program koji provjerava sadrži li string određeni set charactera.
+    a) a-z 
+    b) A-Z 
+    c) 0-9
+
+2. Napiši program koji će provjeravati postoji li u stringu 'a' iza kojeg se nalazi nula ili više 'b'
+
+3. Napiši program koji će provjeravati postoji li u stringu 'a' iza kojeg se nalazi jedno ili više 'b'
+
+4. Napiši program koji će provjeravati postoji li u stringu 'a' iza kojeg se nalazi jedno ili dva 'b'
+
+5. Napiši program koji će provjeravati postoji li u stringu 'a' iza kojeg se nalazi 3 'b'
+
+6. Napiši program koji će provjeravati postoji li u stringu 'a' iza kojeg se nalazi 2 do 3 'b'
+
+7. Napiši program koji traži sequence malih slova povezanih s 'underscore'.
+
+8. Napiši program koji traži sequence velikih slova iza kojih se nalaze mala slova.
+
+9. Napiši program koji će provjeravati postoji li u stringu 'a' iza kojega slijedi bilo što i da završava na 'b'.
+
+10. Napiši program koji vraća zadnju riječ u stringu, zajedno s opcionalnim punktuacijama
+
+11. Napiši program koji vraća sve riječi koje sadrže 'z'
+
+12. Napiši program koji provjerava i vraća rezultat ako se u stringu pojavljuju samo velika i mala slova, brojevi i underscore.
+
+13. Napiši program koji miče nule iz IP adresa
+
+14. Napiši program koji traži postoji li broj na kraju stringa
+
+15. Napiši program koji traži dvoznamenkaste i troznamenkaste brojeve (0-9) u bilo kojem stringu.
+
+16. Napiši program koji traži određene riječi u stringu:
+    Sample text : 'The quick brown fox jumps over the lazy dog.' Searched words : 'fox', 'dog', 'horse'
+
+17. Za svaku riječ iz zadatka 16. izbaci i od kojeg do kojeg indeksa se pojavljuju
+
+18. Pronađi sve substringove 'exercises' u 'Python exercises, PHP exercises, C# exercises'.
+
+19. Napiši program koji izbacuje samo brojeve iz nekog URL-a.
+
+20. Prebaci format datuma iz našeg u američki.
