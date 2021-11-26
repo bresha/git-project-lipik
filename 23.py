@@ -23,3 +23,8 @@ print(pyramid(1))
 print(pyramid(2)) 
 print(pyramid(3)) 
 print(pyramid(4))
+
+def pyramid2(num):
+    return [[1 for _ in range(i+1)] for i in range(num)]
+
+print(pyramid2(4))

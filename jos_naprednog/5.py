@@ -38,3 +38,4 @@ def petica():
         print()
 
 # Kako ovo rijesiti?
+
