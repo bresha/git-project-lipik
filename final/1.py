@@ -12,7 +12,48 @@ import random
 
 class PogađanjeBrojeva:
     def __init__(self) -> None:
-        self.interval = range(-random.randint(0, 1000), random.randint(0, 1000))
-        self.sredina = round(self.interval[len(self.interval)/2])
-        self.prosli_pogodak = None
+        self.interval = range(0 , random.randint(0, 1000))
+        self.sredina = self.interval[round(len(self.interval)/2)]
+        self.prosli_odabir = None
 
+    def gadjaj(self):
+        odabir = int(input("Pogodi broj: "))
+        print('interval', self.interval)
+        print('sredina', self.sredina)
+        if odabir == self.sredina:
+            return 'pogodjeno'
+        if self.prosli_odabir == None:
+            if odabir in self.interval:
+                self.prosli_odabir = odabir
+                return 'toplo'
+            else:
+                return 'hladno'
+        else:
+            novi_interval = self.izracunaj_novi_interval()
+            print(novi_interval)
+            if odabir in novi_interval:
+                self.prosli_odabir = odabir
+                return 'toplije'
+            else:
+                self.prosli_odabir = odabir
+                return 'hladnije'
+
+    def izracunaj_novi_interval(self):
+        razlika = abs(self.sredina - self.prosli_odabir)
+        donji = self.sredina - razlika
+        gornji = self.sredina + razlika + 1
+        return range(donji, gornji)
+
+    def run(self):
+        while True:
+            rezultat = self.gadjaj()
+            if rezultat == 'pogodjeno':
+                print(rezultat)
+                break
+            else:
+                print(rezultat)
+
+
+if __name__ == '__main__':
+    pogadjalo = PogađanjeBrojeva()
+    pogadjalo.run()
