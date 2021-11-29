@@ -15,11 +15,13 @@ class PogađanjeBrojeva:
         self.interval = range(0 , random.randint(0, 1000))
         self.sredina = self.interval[round(len(self.interval)/2)]
         self.prosli_odabir = None
+        self.broj_koraka = 0
 
     def gadjaj(self):
         odabir = int(input("Pogodi broj: "))
         print('interval', self.interval)
         print('sredina', self.sredina)
+        self.broj_koraka += 1
         if odabir == self.sredina:
             return 'pogodjeno'
         if self.prosli_odabir == None:
