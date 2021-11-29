@@ -1,0 +1,55 @@
+1. napravite klasu za pogadjanje brojeva. program treba odrediti random interval brojeva [-random, random] te iz njega uzeti broj koji se nalazi u sredini (postavi granice randoma za granice intervala na 1000). traziti unos od korisnika da unese broj koji je program odredio. ako se broj nalazi u intervalu, program treba ispisati: "toplo", ako je njegov iduci unos blizi broju koji se od njega trazi, treba ispisati: "toplije", a ako unese broj koji se nalazi izvan intervala, treba ispisati poruku: "hladno". ispisite i broj koraka koje je korisnik trebao napraviti da bi dosao do rjesenja.
+
+2. u klasi iz prethodnog zadatka napravi "pseudo lutriju" 6/39, odnosno program koji bi od 0-39 brojeva uzeo nasumicnih 6 (bez ponavljanja) i trazio od korisnika unos brojeva. kada korisnik unese tih 6 brojeva, treba ispisati koliko brojeva je korisnik pogodio i njegov postotak tocnosti (npr. ako je pogodio 3 broja, treba ispisati 50%). nadogradite program tako da prima varijable umjesto brojeva 39 i 6 i neka se korisnika pita za unos istih (npr. 52 i 3, odnosno 3/52).
+
+3. zapisite intervale, brojeve, pogadjanja i postotke tocnosti u zasebne datoteke (imenujte ih po zelji). neka izgled unutar datoteke bude zapisan na sljedeci nacin: 
+	a) za prvi zadatak --> [min, max] | uneseni_brojevi[broj1, broj2, broj3, ...] | broj_koraka
+	b) za drugi zadatak --> 6/39 | uneseni_brojevi[broj1, broj1, broj3, ...] | postotak_pogodaka
+
+4. napravite program koji ucitava podatke iz prethodno napravljenih datoteka te dodatno ispisuje ukupan broj redaka, prosjecan broj koraka (za prvi zadatak), odnosno prosjecan postotak pogodaka (za drugi zadatak)
+
+5. napravite klasu za igru s rijecima. unutar klase napravite metode koje imaju sljedece funkcionalnosti:
+	a) od unesene recenice (min 3 rijeci, ponoviti unos ako uvjet nije zadovoljen) neka generira akronim (skracenicu). npr. "I Love Cats" -> "ILC". nadogradite ju tako da akronim ima max 3 slova i to od najvecih rijeci
+	b) metodu koja prebrojava rijeci u recenici i ispisuje rezultat u obliku: "<rijec>: <broj_ponavljanja>
+	c) igra scrabble (vidi u nastavku), koja ispisuje ukupan broj bodova za unesenu rijec.
+	d) napravi metodu koja prima vrijednost te od te vrijednosti ispisuje sve brojeve slijedno. program treba na svakom broju koji je djeljiv sa:
+		-> 3 ispisati "pling"
+		-> 5 ispisati "plang"
+		-> 7 ispisati "plong"
+		-> ako su djeljivi sa vise od jednog broja, ispisati i jedno i drugo (i trece). npr. ako je unesen broj 105, treba na njegovom mjestu ispisati "plingplangplong" 
+
+SCRABBLE:
+Slovo                           Vrijednost
+A, E, I, O, U, L, N, R, S, T       1
+D, G                               2
+B, C, M, P                         3
+F, H, V, W, Y                      4
+K                                  5
+J, X                               8
+Q, Z                               10
+
+6. napravite klasu za upravljanje nuklearnog reaktora. da bi nuklearni reaktor radio, mora biti u nekakvom stanju kriticnosti. ako je manji od tog stanja, onda moze biti ostecen. ako je iznad tog stanja, onda moze uzrokovati katastrofu i meltdown. kriticnost je zadovoljena ako je temperatura manja od 800, broj emitiranih neutrona po sekundi je veci od 500 i umnozak temperature i emitiranih neutrona po sekundi manji od 500.000.
+
+7. napravite program koji izracunava razliku dva unesena niza DNK (jednakih duljina). npr. ako su uneseni: 
+"GAGCCTACTAACGGGAT" i 
+"CATCGTAATGACGGCCT"
+ x x x  x x    xx
+program treba ispisati da je razlika 7. mozete li ispisati i parove koji nisu u redu?
+
+8. napravite klasu za inventar. implementirajte sljedece funkcionalnost:
+	a) korisnicko sucelje sa sljedecim opcijama: unesi predmet u inventar, ukloni predmet iz inventara, izlaz. broj kolicine u inventaru NE SMIJE biti negativan.
+	b) za dodavanje: npr ako unesem drvo i 3, ako drvo vec ne postoji u inventaru, treba se napraviti novi kljuci i pridruziti vrijednost 3. ukoliko postoji, vrijednost mu se treba uvecati za 3.
+	c) za uklanjanje: npr ako unesem drvo i 3, ako drvo ne postoji u inventaru, nista se nece dogoditi. ukoliko postoji, treba se od njega oduzeti navedeni broj.
+	d) napravite i metodu za izgradnju kuce, koja ce od sljedecih materijala izgraditi kucu (ako je moguce) te ih ukloniti iz inventara i ispisati: "kuca izgradjena!": 5x drvo, 8x cigla, 4x crijep. ukoliko izgradnja kuce nije moguca, potrebno je ispisati odgovarajucu poruku (mozete li nadograditi i da ispise sto je jos potrebno od materijala da bi se kuca mogla izgraditi?)
+
+9. nadogradi prethodni zadatak tako da program odredjuje stupanj ucinkovitosti, koja je grupirana u 4 razreda:
+zeleni -> vise ili jednako 80%
+narancasti -> vise ili jednako 60%
+crveni -> vise ili jednako 30%
+crni -> manje od 30%
+ucinkovitost racunajte prema sljedecim formulama<>: <(generirana_snaga / teoretska_max_snaga_reaktora) * 100>, gdje je <generirana_snaga = napon * jakost_struje>. 
+
+10. nadogradite zadatak implementacijom "fail-safe" mehanizma, odnosno mehanizma koji bi sprijecio meltdown. mehanizam bi trebao prosuditi nalazi li se reaktor u stanju ispod, u ili iznad kriticnosti, koja se moze regulirati umetanjem ili vadjenjem upravljackih sipki u reaktor (odnosno smanjenjem ili povecanjem kriticnosti). metoda treba primati 3 parametra (temperatura, broj_emitiranih_neutrona_po_sekundi, prag). 
+	a) ako je ucinkovitost (vidi prethodni zadatak) manja od 90% od praga, tada se treba ispisati status code "LOW" te ukloniti upravljacke sipke, kako bi reaktor mogao proizvoditi snagu.
+	b) ako je ucinkovitost unutar 10% razlike praga, reaktor se nalazi u stanju kriticnosti i treba ispisati status code "NORMAL"
+	c) ako ucinkovitost NIJE u gore navedenim rasponima, status code treba ispisati "DANGER"
