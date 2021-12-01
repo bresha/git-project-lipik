@@ -92,3 +92,12 @@ class Inventar:
                 print(f"Nedostaje {abs(cigla_kolicina - potrebno_cigli)} cigli")
             if crijep_kolicina - potrabno_crijepa < 0:
                 print(f"Nedostaje {abs(crijep_kolicina - potrabno_crijepa)}")
+
+
+def main():
+    inventar = Inventar()
+    inventar.start()
+    inventar.izgradi_kucu()
+
+if __name__ == '__main__':
+    main()
