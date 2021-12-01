@@ -1,0 +1,12 @@
+
+1. napravite 2D matricu dimenzija 10, postavite vrijednosti pomocu random(0, 10) i ispisite ju.
+
+2. iz matrice iz prethodnog zadatka, ispisite sljedece:
+    a) dijagonale matrice
+    b) stupce matrice odvojene zarezom
+    c) koordinate: [3, 8], [10, 10], [5, 5] - nadogradite tako da korisnik moze unijeti koordinate koje zeli ispisati.
+    
+3. napravite 3D matricu popunjenu random vrijednostima, ispisite ju te dohvatite neku koordinatu koju korisnik unese. ako  je vrijednost koordinate 0, ispisati "CRNA", ako je 10, ispisati "BIJELA".
+
+4. napravite jednostavniju verziju igre potapanja brodova. neka se ploca za igru sastoji od matrice, a program neka odredi neke random koordinate na kojima se nalazi protivnicki brod. zadatak igraca je potopiti sve brodove. neka se ispise prikladna poruka ako je brod pogodjen, promasen ili ako vise ne postoji protivnickih brodova na ploci.
+    

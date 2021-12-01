@@ -25,7 +25,7 @@ class Inventar:
             if odabir == '1':
                 self.__unos()
             elif odabir == '2':
-                pass
+                self.__uklon()
             elif odabir == '3':
                 break
             else:
@@ -54,4 +54,41 @@ class Inventar:
                 print("Unijeli ste neispravan izraz za kolicinu!")
 
     def __uklon(self):
-        pass
+        while True:
+            print("Za izlaz upisite '-1'")
+            naziv = input("Unesite naziv artikla: ")
+            if naziv == '-1':
+                break
+            if not naziv in self.__inventar.keys():
+                print("Nema tog artikla u inventaru")
+            else:
+                kolicina = self.__unos_kolicine()
+                if kolicina == -1:
+                    break
+                if self.__inventar[naziv] - kolicina >= 0:
+                    self.__inventar[naziv] -= kolicina
+                else:
+                    print("Nema dovoljno artikala")
+
+    def izgradi_kucu(self):
+        potrebno_drvo = 5
+        potrebno_cigli = 8
+        potrabno_crijepa = 4
+        jesu_li_komponente_u_invertaru = all(el in self.__inventar.keys() for el in ('drvo', 'cigla', 'crijep'))
+        drvo_kolicina = self.__inventar['drvo']
+        cigla_kolicina = self.__inventar['cigla']
+        crijep_kolicina = self.__inventar['crijep']
+
+        if jesu_li_komponente_u_invertaru and drvo_kolicina >= potrebno_drvo and cigla_kolicina >= potrebno_cigli and crijep_kolicina >= potrabno_crijepa:
+            self.__inventar['drvo'] -= potrebno_drvo
+            self.__inventar['cigla'] -= potrebno_cigli
+            self.__inventar['crijep'] -= potrabno_crijepa
+            print("Kuca izgradjena!")
+        else:
+            print("Kuca nije izgardjena!")
+            if drvo_kolicina - potrebno_drvo < 0:
+                print(f"Nedostaje {abs(drvo_kolicina - potrebno_drvo)} drva")
+            if cigla_kolicina - potrebno_cigli < 0:
+                print(f"Nedostaje {abs(cigla_kolicina - potrebno_cigli)} cigli")
+            if crijep_kolicina - potrabno_crijepa < 0:
+                print(f"Nedostaje {abs(crijep_kolicina - potrabno_crijepa)}")
