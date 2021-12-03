@@ -3,9 +3,12 @@ import numpy as np
 import os
 from datetime import date
 
-from pandas._libs.tslibs.timedeltas import Timedelta
 
-df = pd.read_csv(os.path.join(os.getcwd(), 'letovi.csv'))
+# 1. Loadaj Deanovu tablicu (pazi na header)
+df = pd.read_csv(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'letovi.csv'))
+
+
+# 2. Prikaži podatke o tablici
 print(df.head())
 print(df.columns)
 print(df.shape)
@@ -13,10 +16,17 @@ print(df.size)
 print(df.describe())
 print(df.dtypes)
 
+
+# 3. Pretvori column sa cijenama u dva nova:
+    # a) numeričke vrijednosti (napravi konverzije u EUR ili bilo koju drugu valutu) 
+    # b) drugi stupac gdje piše valuta
 df['price'] = df['Prices'].map(lambda x: float(x.split(' ')[0].replace('.', '')) / 7.3)
 df.insert(7, 'currency', 'EUR')
 print(df.head())
 
+
+# 4. Dodajte novi stupac gdje piše trajanje putovanja (arrival minus departure)
+    # stavite 1h ako je trajanje dana 0
 def convert_date(x):
     months = {
         'Dec': 12,
@@ -34,16 +44,12 @@ def convert_date(x):
 
 df['departure'] = pd.Series(map(convert_date, df['Departure date:']))
 df['arrival'] = pd.Series(map(convert_date, df['Date of Arrival:']))
-
-# df['difference_in_hours'] = np.where(df['arrival'] - df['departure'] > 0, (df['arrival'] - df['departure']) * 24, 1)
-df['difference_in_hours'] = np.where(df['arrival'] - df['departure'] > pd.Timedelta(value=0, unit='D'), pd.to_timedelta((df['arrival'] - df['departure']), 'ns'), pd.to_timedelta(1, 'h'))
-# df['difference_in_hours'] = df['arrival'] - df['departure']
+df['difference'] = np.where(df['arrival'] - df['departure'] > pd.Timedelta(value=0, unit='D'), (df['arrival'] - df['departure']), np.timedelta64(3600000000000, 'ns'))
 print(df.head())
-# df['difference_in_hours'] = df['difference_in_hours'] / 3600000000000
-# print(df.head)
-# df['day'] = df['Date of Arrival:'].map(lambda x: x.split(' ')[0])
-# print(df.head())
 
-# sorted_df = df.sort_values(['price'], ascending=True)
-# print(sorted_df)
-# print(sorted_df[sorted_df['day'] == 'Wed'].head(1))
+
+# 5. Pronađi najpovoljni let srijedom
+df['day'] = df['Date of Arrival:'].map(lambda x: x.split(' ')[0])
+print(df.head())
+sorted_df = df.sort_values(['price'], ascending=True)
+print(sorted_df[sorted_df['day'] == 'Wed'].head(1))
